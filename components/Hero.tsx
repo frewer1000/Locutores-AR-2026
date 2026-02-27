@@ -83,7 +83,7 @@ const Hero: React.FC<HeroProps> = ({ onStart }) => {
             <span className="text-[8px] uppercase tracking-widest font-bold">Tu Compañía</span>
           </div>
           <div className="flex flex-col items-center">
-            <span className="text-2xl font-black tracking-tighter">CIUDAD 90.5</span>
+            <span className="text-2xl font-black tracking-tighter">CIUDAD 90.3</span>
             <span className="text-[8px] uppercase tracking-widest font-bold">La Voz de la City</span>
           </div>
         </div>
