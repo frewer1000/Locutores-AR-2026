@@ -23,6 +23,7 @@ const App: React.FC<AppProps> = ({ forcedView }) => {
   const [view, setView] = useState<'landing' | 'app' | 'store'>(
     forcedView || viewParam || (isAuthCallback || isStudioPath ? 'app' : 'landing')
   );
+  const [showTutorials, setShowTutorials] = useState(false);
 
   useEffect(() => {
     if (forcedView) setView(forcedView);
@@ -50,16 +51,51 @@ const App: React.FC<AppProps> = ({ forcedView }) => {
               <span className="text-xl font-black tracking-tighter uppercase leading-none text-white">LOCUTORES<span className="text-blue-500">.AR</span></span>
             </div>
             
-            <a 
-              href={WP_CONFIG.STUDIO_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-2.5 bg-white text-black rounded-xl font-black text-[10px] uppercase tracking-widest hover:bg-blue-50 transition-all active:scale-95 inline-block"
-            >
-              Ir al Estudio
-            </a>
+            <div className="flex items-center gap-4">
+              <button 
+                onClick={() => setShowTutorials(true)}
+                className="px-6 py-2.5 bg-white/5 border border-white/10 text-white rounded-xl font-black text-[10px] uppercase tracking-widest hover:bg-white/10 transition-all active:scale-95"
+              >
+                Tutoriales
+              </button>
+              <a 
+                href={WP_CONFIG.STUDIO_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-2.5 bg-white text-black rounded-xl font-black text-[10px] uppercase tracking-widest hover:bg-blue-50 transition-all active:scale-95 inline-block"
+              >
+                Ir al Estudio
+              </a>
+            </div>
           </div>
         </nav>
+      )}
+
+      {showTutorials && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8">
+          <div 
+            className="absolute inset-0 bg-black/90 backdrop-blur-sm"
+            onClick={() => setShowTutorials(false)}
+          />
+          <div className="relative w-full max-w-5xl aspect-video bg-black rounded-3xl overflow-hidden shadow-2xl border border-white/10 animate-in fade-in zoom-in duration-300">
+            <button 
+              onClick={() => setShowTutorials(false)}
+              className="absolute top-4 right-4 z-10 w-10 h-10 bg-black/50 hover:bg-black text-white rounded-full flex items-center justify-center transition-all border border-white/10"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <iframe 
+              src="https://www.youtube.com/embed/videoseries?list=PLKWf_Hv88D0UJfhJPYbbPqys50M18GJuK"
+              className="w-full h-full"
+              title="Tutoriales Locutores.ar"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+        </div>
       )}
 
       {view === 'landing' ? (
