@@ -87,7 +87,7 @@ const App: React.FC<AppProps> = ({ forcedView }) => {
               </svg>
             </button>
             <iframe 
-              src="https://www.youtube.com/embed/videoseries?list=PLKWf_Hv88D0UJfhJPYbbPqys50M18GJuK"
+              src="https://www.youtube.com/embed/bUylol8f_cI?list=PLKWf_Hv88D0UJfhJPYbbPqys50M18GJuK&autoplay=1"
               className="w-full h-full"
               title="Tutoriales Locutores.ar"
               frameBorder="0"
