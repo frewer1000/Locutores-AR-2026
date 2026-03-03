@@ -1,4 +1,3 @@
-
 {
   "name": "locutores-ar-ai",
   "private": true,
@@ -13,6 +12,7 @@
   "dependencies": {
     "@google/genai": "^1.3.0",
     "@supabase/supabase-js": "^2.39.7",
+    "lucide-react": "^0.576.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

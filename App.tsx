@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { Instagram } from 'lucide-react';
 import Hero from './components/Hero.tsx';
 import Demos from './components/Demos.tsx';
 import Features from './components/Features.tsx';
@@ -52,6 +53,15 @@ const App: React.FC<AppProps> = ({ forcedView }) => {
             </div>
             
             <div className="flex items-center gap-4">
+              <a 
+                href="https://www.instagram.com/locutoresargentinosia/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 flex items-center justify-center bg-white/5 border border-white/10 text-white rounded-xl hover:bg-white/10 transition-all active:scale-95"
+                title="Instagram"
+              >
+                <Instagram size={18} />
+              </a>
               <button 
                 onClick={() => setShowTutorials(true)}
                 className="px-6 py-2.5 bg-white/5 border border-white/10 text-white rounded-xl font-black text-[10px] uppercase tracking-widest hover:bg-white/10 transition-all active:scale-95"
@@ -118,9 +128,19 @@ const App: React.FC<AppProps> = ({ forcedView }) => {
               <p className="text-gray-500 text-xs font-medium max-w-md mx-auto mb-2 uppercase tracking-widest">
                 LA PRIMERA PLATAFORMA DE LOCUCIÓN PROFESIONAL CON IA DE ARGENTINA.
               </p>
-              <p className="text-blue-500/60 text-[10px] font-black uppercase tracking-[0.2em] mb-8">
+              <p className="text-blue-500/60 text-[10px] font-black uppercase tracking-[0.2em] mb-4">
                 admin@locutoresargentinosia.com.ar
               </p>
+              <div className="flex justify-center gap-4 mb-8">
+                <a 
+                  href="https://www.instagram.com/locutoresargentinosia/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 flex items-center justify-center bg-white/5 border border-white/10 text-gray-400 rounded-lg hover:text-white hover:bg-white/10 transition-all"
+                >
+                  <Instagram size={16} />
+                </a>
+              </div>
               <div className="text-[10px] font-black text-gray-700 uppercase tracking-[0.3em]">
                 © {new Date().getFullYear()} MASTER PRODUCCIONES • TODOS LOS DERECHOS RESERVADOS
               </div>
@@ -140,6 +160,15 @@ const App: React.FC<AppProps> = ({ forcedView }) => {
                 </div>
               </div>
               <div className="flex items-center gap-4">
+                <a 
+                  href="https://www.instagram.com/locutoresargentinosia/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 flex items-center justify-center bg-white/5 border border-white/10 text-white rounded-xl hover:bg-white/10 transition-all active:scale-95"
+                  title="Instagram"
+                >
+                  <Instagram size={18} />
+                </a>
                 <button 
                   onClick={openStore}
                   className="px-8 py-3 bg-blue-600/10 border border-blue-500/20 text-blue-400 rounded-xl font-black text-[10px] uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all"
