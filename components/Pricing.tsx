@@ -12,7 +12,7 @@ const Pricing: React.FC = () => {
       description: 'Ideal para proyectos puntuales y spots de redes sociales.',
       features: [
         '20 Locuciones Totales',
-        '10 originales + 10 bonificadas',
+        '10 ORIGINALES + 10 SEGUNDAS TOMAS DE REGALO',
         'Costo x Locución: $1.250',
         'Sin fecha de vencimiento',
         'Uso en Radio, TV, Web y Redes'
@@ -28,7 +28,7 @@ const Pricing: React.FC = () => {
       description: 'Perfecto para campañas de frecuencia diaria y lanzamientos.',
       features: [
         '50 Locuciones Totales',
-        '25 originales + 25 bonificadas',
+        '25 ORIGINALES + 25 SEGUNDAS TOMAS DE REGALO',
         'Costo x Locución: $1.100 (¡Ahorrás más!)',
         'Sin fecha de vencimiento',
         'Uso en Radio, TV, Web y Redes'
@@ -44,7 +44,7 @@ const Pricing: React.FC = () => {
       description: 'Para quienes necesitan calidad y rapidez todos los días.',
       features: [
         '100 Locuciones Totales',
-        '50 originales + 50 bonificadas',
+        '50 ORIGINALES + 50 SEGUNDAS TOMAS DE REGALO',
         'Costo x Locución: $1.000 (Precio Mayorista)',
         'Soporte prioritario',
         'Uso ilimitado sin vencimiento'
@@ -130,7 +130,7 @@ const Pricing: React.FC = () => {
         <div className="max-w-3xl mx-auto p-10 glass rounded-[3rem] border-blue-500/20 text-center relative overflow-hidden group">
           <div className="absolute inset-0 bg-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           <p className="text-lg md:text-xl text-gray-300 font-medium leading-relaxed italic relative z-10">
-            "¿Por qué las locuciones bonificadas? Porque sabemos que a veces querés probar un tono distinto o ajustar una pausa. <span className="text-blue-400 font-black">Con nosotros, el re-take es parte del pack.</span>"
+            "¿Por qué las SEGUNDAS TOMAS DE REGALO? Porque sabemos que a veces querés probar un tono distinto o ajustar una pausa. <span className="text-blue-400 font-black">Con nosotros, el re-take es parte del pack.</span>"
           </p>
         </div>
       </div>
