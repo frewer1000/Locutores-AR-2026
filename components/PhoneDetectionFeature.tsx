@@ -63,7 +63,7 @@ const PhoneDetectionFeature: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="bg-black/60 rounded-2xl p-6 mb-6 border border-white/5 min-h-[350px] transition-all duration-500">
+                  <div className="bg-black/60 rounded-2xl p-4 mb-6 border border-white/5 min-h-[250px] transition-all duration-500">
                     {step === 1 && <p className="text-gray-300 text-[10px] uppercase font-bold tracking-wide animate-fade-in">{scriptOriginal}</p>}
                     {step === 2 && <p className="text-gray-300 text-[10px] uppercase font-bold tracking-wide animate-fade-in">{scriptOriginal}</p>}
                     {step === 3 && <p className="text-gray-300 text-[10px] uppercase font-bold tracking-wide animate-fade-in">{scriptOriginal}</p>}
