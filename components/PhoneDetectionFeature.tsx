@@ -63,22 +63,24 @@ const PhoneDetectionFeature: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="bg-black/60 rounded-2xl p-4 mb-6 border border-white/5 min-h-[250px] transition-all duration-500">
-                    {step === 1 && <p className="text-gray-300 text-[10px] uppercase font-bold tracking-wide animate-fade-in">{scriptOriginal}</p>}
-                    {step === 2 && <p className="text-gray-300 text-[10px] uppercase font-bold tracking-wide animate-fade-in">{scriptOriginal}</p>}
-                    {step === 3 && <p className="text-gray-300 text-[10px] uppercase font-bold tracking-wide animate-fade-in">{scriptOriginal}</p>}
-                    {step === 4 && <p className="text-gray-300 text-[10px] uppercase font-bold tracking-wide animate-fade-in">{scriptFinal}</p>}
+                  <div className="bg-black/60 rounded-2xl p-4 mb-4 border border-white/5 h-[120px] overflow-hidden transition-all duration-500">
+                    {step === 4 
+                      ? <p className="text-gray-300 text-[10px] uppercase font-bold tracking-wide">{scriptFinal}</p>
+                      : <p className="text-gray-300 text-[10px] uppercase font-bold tracking-wide">{scriptOriginal}</p>
+                    }
                   </div>
 
-                  {(step === 2 || step === 3) && (
-                    <div className="space-y-3 mb-6 animate-fade-in">
-                      {suggestions.map((s, i) => (
-                        <div key={i} className={`text-[9px] font-black uppercase tracking-widest ${step === 2 ? 'text-red-500' : 'text-green-500'}`}>
-                          {s.type}: "{s.original}" → LEER: "{s.read}"
-                        </div>
-                      ))}
-                    </div>
-                  )}
+                  <div className="space-y-2 mb-4 h-[80px] overflow-hidden">
+                    {suggestions.map((s, i) => (
+                      <div key={i} className={`text-[9px] font-black uppercase tracking-widest transition-colors duration-500 ${
+                        step === 2 ? 'text-red-500' : 
+                        step === 3 ? 'text-green-500' : 
+                        'opacity-0'
+                      }`}>
+                        {s.type}: "{s.original}" → LEER: "{s.read}"
+                      </div>
+                    ))}
+                  </div>
 
                   <div className="flex items-center justify-between gap-4">
                     <div className="flex gap-2">
@@ -102,21 +104,19 @@ const PhoneDetectionFeature: React.FC = () => {
                     </button>
                   </div>
 
-                  {step === 2 && (
-                    <div className="mt-6 flex items-start gap-4 p-6 bg-white/5 rounded-3xl border border-white/5 shadow-inner animate-fade-in">
-                      <div className="p-3 bg-blue-500/20 rounded-2xl">
-                        <svg className="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-                        </svg>
-                      </div>
-                      <div>
-                        <p className="text-[11px] text-white font-black uppercase tracking-widest mb-1">Sugerencias Editables</p>
-                        <p className="text-sm text-gray-400 font-medium">
-                          Antes de incorporar las sugerencias, podés editarlas directamente desde el campo Notas del Director. Ajustá cualquier pronunciación antes de confirmar.
-                        </p>
-                      </div>
+                  <div className="mt-6 flex items-start gap-4 p-6 bg-white/5 rounded-3xl border border-white/5 shadow-inner">
+                    <div className="p-3 bg-blue-500/20 rounded-2xl">
+                      <svg className="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                      </svg>
                     </div>
-                  )}
+                    <div>
+                      <p className="text-[11px] text-white font-black uppercase tracking-widest mb-1">Sugerencias Editables</p>
+                      <p className="text-sm text-gray-400 font-medium">
+                        Antes de incorporar las sugerencias, podés editarlas directamente desde el campo Notas del Director. Ajustá cualquier pronunciación antes de confirmar.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
