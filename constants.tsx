@@ -72,6 +72,33 @@ export const VOICE_OPTIONS: VoiceOption[] = [
     defaultStyle: VoiceStyle.URBANA, 
     referenceScript: '¡Vení ya! Solo por hoy, aprovechá las mejores ofertas en tecnología y accesorios.' 
   },
+  { 
+    id: 'Algenib', 
+    displayName: 'Rodrigo', 
+    gender: 'M', 
+    description: 'Voz ronca y magnética. Potente, profunda y con carácter. Para mensajes que necesitan impacto y presencia absoluta.', 
+    defaultStyle: VoiceStyle.EPICA, 
+    referenceScript: 'Soy Rodrigo. Mi voz queda. Potente, profunda, con carácter. Cuando tu mensaje tiene que impactar, me elegís a mí.',
+    isNew: true
+  },
+  { 
+    id: 'Enceladus', 
+    displayName: 'Nicolás', 
+    gender: 'M', 
+    description: 'Joven y cómplice. Natural, cercano y sin poses. El sonido auténtico para marcas que hablan el idioma de hoy.', 
+    defaultStyle: VoiceStyle.URBANA, 
+    referenceScript: 'Soy Nicolás. Sueno natural, cercano, como si te estuviera hablando al oído. Sin poses, sin libreto.',
+    isNew: true
+  },
+  { 
+    id: 'Umbriel', 
+    displayName: 'Leandro', 
+    gender: 'M', 
+    description: 'Parejo y confiable. Claridad, presencia y profesionalismo en cada palabra. La voz que transmite confianza desde el primer segundo.', 
+    defaultStyle: VoiceStyle.VERSATIL, 
+    referenceScript: 'Soy Leandro. Claridad, presencia y profesionalismo en cada palabra. Transmito confianza desde el primer segundo.',
+    isNew: true
+  },
 
   // FEMENINOS (7)
   { 
@@ -129,6 +156,33 @@ export const VOICE_OPTIONS: VoiceOption[] = [
     description: 'Voz sensual y global. El sonido de las grandes marcas internacionales con una elegancia pura y presencia premium refinada.', 
     defaultStyle: VoiceStyle.SENSUAL, 
     referenceScript: 'Elegancia pura en cada palabra. El estándar internacional del lujo moderno para tu marca.' 
+  },
+  { 
+    id: 'Aoede', 
+    displayName: 'Valentina', 
+    gender: 'F', 
+    description: 'Fresca y dinámica. Energía, ritmo y personalidad. La voz que prende la radio y no la apagás más.', 
+    defaultStyle: VoiceStyle.ENERGETICA, 
+    referenceScript: 'Soy Valentina. Energía, ritmo y personalidad. La voz que prende la radio y no la apagás más.',
+    isNew: true
+  },
+  { 
+    id: 'Leda', 
+    displayName: 'Sofía', 
+    gender: 'F', 
+    description: 'Cálida y empática. Una voz que llega, que conecta, que acompaña. Para mensajes que necesitan calidez para ser escuchados.', 
+    defaultStyle: VoiceStyle.VERSATIL, 
+    referenceScript: 'Soy Sofía. Una voz que llega, que conecta, que acompaña. Porque hay mensajes que necesitan calidez.',
+    isNew: true
+  },
+  { 
+    id: 'Achernar', 
+    displayName: 'Renata', 
+    gender: 'F', 
+    description: 'Sensual y sofisticada. Pausa, elegancia y cada palabra elegida con intención. Para las marcas que saben que el detalle lo es todo.', 
+    defaultStyle: VoiceStyle.SENSUAL, 
+    referenceScript: 'Soy Renata. Pausa. Elegancia. Cada palabra, elegida con intención. Para las marcas que saben que el detalle lo es todo.',
+    isNew: true
   }
 ];
 

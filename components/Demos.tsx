@@ -84,7 +84,7 @@ const Demos: React.FC<DemosProps> = ({ onTry }) => {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {filteredVoices.map((voice) => (
+              {[...filteredVoices].sort((a, b) => (b.isNew ? 1 : 0) - (a.isNew ? 1 : 0)).map((voice) => (
                 <div 
                   key={voice.displayName} 
                   className={`glass p-8 rounded-[2.5rem] hover:bg-white/[0.08] transition-all group border-white/5 flex flex-col items-center text-center relative overflow-hidden ${playingId === voice.displayName ? 'border-blue-500/50 bg-blue-500/5' : ''}`}
@@ -98,7 +98,20 @@ const Demos: React.FC<DemosProps> = ({ onTry }) => {
                     )}
                   </div>
 
-                  <h3 className="font-black text-xl mb-1 tracking-tighter text-white uppercase">{voice.displayName}</h3>
+                  <h3 className="font-black text-xl mb-1 tracking-tighter text-white uppercase flex items-center justify-center gap-2">
+                    {voice.displayName}
+                    {voice.isNew && (
+                      <span style={{
+                        background: '#00d4ff',
+                        color: '#000',
+                        fontSize: '10px',
+                        fontWeight: 'bold',
+                        padding: '2px 6px',
+                        borderRadius: '4px',
+                        letterSpacing: '0.5px'
+                      }}>NEW</span>
+                    )}
+                  </h3>
                   <div className="text-[9px] text-blue-500 font-black uppercase tracking-[0.2em] mb-4">
                      Voice Talent | Arg
                   </div>

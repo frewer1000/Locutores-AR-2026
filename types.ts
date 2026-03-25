@@ -15,6 +15,7 @@ export interface VoiceOption {
   referenceScript: string; 
   description: string; 
   defaultStyle: VoiceStyle; 
+  isNew?: boolean;
 }
 
 export interface AudioGenerationState {

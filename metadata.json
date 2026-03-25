@@ -1,5 +1,5 @@
 {
-  "name": "Remix: Locutores.ar AI",
+  "name": "Locutores.ar AI 2026 - Aterrizaje",
   "description": "Estudio de locución profesional con acento rioplatense impulsado por Gemini AI. Genera voces argentinas naturales para radio, TV y redes en segundos.",
   "requestFramePermissions": [
     "microphone"
