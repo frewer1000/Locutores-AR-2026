@@ -63,7 +63,7 @@ const Demos: React.FC<DemosProps> = ({ onTry }) => {
           <div className="mt-32">
             <div className="flex flex-col md:flex-row items-center justify-between mb-12 gap-6">
               <div className="text-left">
-                <h3 className="text-2xl md:text-4xl font-black tracking-tight uppercase">Staff de <span className="text-blue-500">14 Voces Reales</span></h3>
+                <h3 className="text-2xl md:text-4xl font-black tracking-tight uppercase">Staff de <span className="text-blue-500">20 Voces Reales</span></h3>
                 <p className="text-gray-500 text-[10px] font-black uppercase tracking-[0.4em]">Personalidad única para cada proyecto</p>
               </div>
 
