@@ -5,6 +5,7 @@ import Hero from './components/Hero.tsx';
 import Demos from './components/Demos.tsx';
 import Features from './components/Features.tsx';
 import AIAnalyzerFeature from './components/AIAnalyzerFeature.tsx';
+import PhoneDetectionFeature from './components/PhoneDetectionFeature.tsx';
 import Pricing from './components/Pricing.tsx';
 import VoiceStudio from './components/VoiceStudio.tsx';
 import Store from './components/Store.tsx';
@@ -114,6 +115,7 @@ const App: React.FC<AppProps> = ({ forcedView }) => {
           <Demos onTry={() => handleNavigation('app')} />
           <Features />
           <AIAnalyzerFeature />
+          <PhoneDetectionFeature />
           <Pricing />
           <footer className="py-20 border-t border-white/5 bg-black/50">
             <div className="container mx-auto px-6 text-center">
