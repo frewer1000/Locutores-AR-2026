@@ -64,7 +64,7 @@ const Hero: React.FC<HeroProps> = ({ onStart }) => {
           
           <div className="bg-blue-500/10 border border-blue-500/20 rounded-2xl p-4 max-w-xl animate-fade-in">
             <p className="text-[11px] md:text-xs font-black text-blue-300 uppercase tracking-widest leading-relaxed">
-              Regístrate automáticamente desde <span className="text-white">PROBAR EL ESTUDIO AHORA</span> y <span className="text-white underline decoration-blue-500 underline-offset-4">obtené 3 locuciones gratis</span>.
+              Regístrate automáticamente desde <span className="text-white">PROBAR EL ESTUDIO AHORA</span> y <span className="text-white underline decoration-blue-500 underline-offset-4">obtené 2 locuciones gratis</span>.
             </p>
           </div>
         </div>
