@@ -49,7 +49,7 @@ const Demos: React.FC<DemosProps> = ({ onTry }) => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-20">
           <div className="inline-block px-5 py-2 rounded-full bg-blue-500/5 border border-blue-500/10 text-[9px] font-black uppercase tracking-[0.3em] text-blue-400 mb-8">
-            Staff Profesional Argentino
+            Staff de Voces Argentinas
           </div>
           <h2 className="text-4xl md:text-7xl font-black mb-6 tracking-tighter uppercase">
             Galería de <span className="gradient-text">Talentos</span>
@@ -63,7 +63,7 @@ const Demos: React.FC<DemosProps> = ({ onTry }) => {
           <div className="mt-32">
             <div className="flex flex-col md:flex-row items-center justify-between mb-12 gap-6">
               <div className="text-left">
-                <h3 className="text-2xl md:text-4xl font-black tracking-tight uppercase">Staff de <span className="text-blue-500">20 Voces Reales</span></h3>
+                <h3 className="text-2xl md:text-4xl font-black tracking-tight uppercase">Staff de <span className="text-blue-500">20 Voces Argentinas</span></h3>
                 <p className="text-gray-500 text-[10px] font-black uppercase tracking-[0.4em]">Personalidad única para cada proyecto</p>
               </div>
 

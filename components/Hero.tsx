@@ -40,7 +40,7 @@ const Hero: React.FC<HeroProps> = ({ onStart }) => {
         </h1>
         
         <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed font-medium">
-          Locuciones argentinas profesionales en segundos. Acento rioplatense real, 
+          Locuciones argentinas en segundos. Acento rioplatense real, 
           naturalidad absoluta y descarga inmediata para potenciar tu contenido.
         </p>
         

@@ -70,11 +70,11 @@ const Pricing: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
           <div className="inline-block px-5 py-1.5 rounded-full bg-blue-500/10 text-blue-400 text-[9px] font-black uppercase tracking-[0.3em] mb-6 border border-blue-500/20">
-             VÁLIDO PARA PUBLICIDAD, RADIO, TV, REDES, POLÍTICA Y ARTÍSTICA
+             CREÁ COMERCIALES, SEPARADORES, SIGLAS, ARTISTICA PARA RADIOS, SPOTS POLÍTICOS Y AUDIOS PARA REDES EN SOLO MINUTOS.
           </div>
           <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tighter uppercase">Packs de <span className="text-blue-500">Locuciones</span></h2>
           <p className="text-gray-400 font-medium max-w-2xl mx-auto italic mb-6 leading-relaxed px-4">
-            "Nuestras locuciones están habilitadas para todo tipo de uso: Publicidades comerciales, artística de radio, campañas políticas y promociones. Calidad nacional al mejor precio."
+            "Renová tu artística, cumplí con tus clientes al instante. Llevá tus tandas a otro nivel con la máxima calidad. Dale a tu audiencia el sonido que se merece"
           </p>
           <div className="inline-flex items-center gap-2 bg-red-500/10 border border-red-500/20 px-4 py-2 rounded-xl">
              <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>

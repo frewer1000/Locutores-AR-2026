@@ -44,7 +44,7 @@ const Features: React.FC = () => {
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-black mb-6 tracking-tighter uppercase">Locución <span className="gradient-text">Instantánea</span></h2>
           <p className="text-gray-500 font-medium max-w-2xl mx-auto">
-            Combinamos los modelos de lenguaje más avanzados para entregarte locuciones profesionales listas para descargar en menos de un minuto.
+            Combinamos los modelos de lenguaje más avanzados para entregarte locuciones listas para descargar en menos de un minuto.
           </p>
         </div>
         
