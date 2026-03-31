@@ -55,7 +55,7 @@ const Demos: React.FC<DemosProps> = ({ onTry }) => {
             Galería de <span className="gradient-text">Talentos</span>
           </h2>
           <p className="text-gray-500 text-lg font-medium max-w-2xl mx-auto italic mb-16 leading-relaxed">
-            "Escuchá la calidad final de nuestros talentos. Locuciones procesadas con entrega garantizada en menos de 60 segundos."
+            "Escuchá la calidad de nuestros talentos. Locuciones procesadas con entrega garantizada en menos de 60 segundos."
           </p>
           
           <FeaturedDemos />
