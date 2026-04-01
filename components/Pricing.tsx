@@ -23,7 +23,7 @@ const Pricing: React.FC = () => {
       name: 'PACK INICIAL',
       oldPrice: '$50.000',
       price: '$25.000',
-      description: 'Ideal para proyectos puntuales y spots de redes sociales.',
+      description: 'Ideal para spots de radio y redes sociales.',
       features: [
         '20 LOCUCIONES TOTALES',
         '10 ORIGINALES + 10 SEGUNDAS TOMAS DE REGALO',
@@ -47,7 +47,7 @@ const Pricing: React.FC = () => {
         'SIN VENCIMIENTO',
         'USO EN RADIO, TV, WEB Y REDES'
       ],
-      highlight: false,
+      highlight: true,
       isNew: false
     },
     {
@@ -64,7 +64,7 @@ const Pricing: React.FC = () => {
         'SOPORTE PRIORITARIO',
         'USO ILIMITADO'
       ],
-      highlight: true,
+      highlight: false,
       isNew: false
     }
   ];
