@@ -6,12 +6,12 @@ const Pricing: React.FC = () => {
       id: 'pack_spot_ya',
       name: '⚡ PACK SPOT YA',
       oldPrice: null,
-      price: '$9.900',
+      price: '$11.900',
       description: 'Entró una publicidad y tiene que salir ahora. La solución inmediata.',
       features: [
         '2 LOCUCIONES TOTALES',
         '1 ORIGINAL + 1 SEGUNDA TOMA POR SI ALGO NO QUEDÓ COMO QUERÍAS',
-        'COSTO X LOCUCIÓN: $4.950',
+        'COSTO X LOCUCIÓN: $5.950',
         'SIN VENCIMIENTO',
         'USO EN RADIO, TV, WEB Y REDES'
       ],
@@ -22,12 +22,12 @@ const Pricing: React.FC = () => {
       id: 'pack_inicial',
       name: 'PACK INICIAL',
       oldPrice: '$50.000',
-      price: '$25.000',
+      price: '$35.000',
       description: 'Ideal para spots de radio y redes sociales.',
       features: [
         '20 LOCUCIONES TOTALES',
         '10 ORIGINALES + 10 SEGUNDAS TOMAS DE REGALO',
-        'COSTO X LOCUCIÓN: $1.250',
+        'COSTO X LOCUCIÓN: $1.750',
         'SIN VENCIMIENTO',
         'USO EN RADIO, TV, WEB Y REDES'
       ],
