@@ -72,12 +72,12 @@ const Pricing: React.FC = () => {
   const handlePurchase = () => {
     try {
       if (window.top) {
-        window.top.location.href = "https://locutores-ar-v3-estudio.vercel.app/";
+        window.top.location.href = "https://locutores-ar-v4-estudio.vercel.app/";
       } else {
-        window.location.href = "https://locutores-ar-v3-estudio.vercel.app/";
+        window.location.href = "https://locutores-ar-v4-estudio.vercel.app/";
       }
     } catch (e) {
-      window.location.href = "https://locutores-ar-v3-estudio.vercel.app/";
+      window.location.href = "https://locutores-ar-v4-estudio.vercel.app/";
     }
   };
 

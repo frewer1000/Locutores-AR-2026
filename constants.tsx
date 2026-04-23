@@ -7,7 +7,7 @@ export const GITHUB_REPO = 'https://github.com/';
 
 export const WP_CONFIG = {
   HOME_URL: '/',           
-  STUDIO_URL: 'https://locutores-ar-v3-estudio.vercel.app/',  
+  STUDIO_URL: 'https://locutores-ar-v4-estudio.vercel.app/',  
   PRICING_URL: '/tienda/',
   DEMOS_BASE_URL: 'https://locutoresargentinosia.com.ar/demos/'
 };
