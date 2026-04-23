@@ -3,33 +3,19 @@ import React from 'react';
 const Pricing: React.FC = () => {
   const plans = [
     {
-      id: 'pack_spot_ya',
-      name: '⚡ PACK SPOT YA',
-      oldPrice: null,
-      price: '$11.900',
-      description: 'Entró una publicidad y tiene que salir ahora. La solución inmediata.',
-      features: [
-        '2 LOCUCIONES TOTALES',
-        '1 ORIGINAL + 1 SEGUNDA TOMA POR SI ALGO NO QUEDÓ COMO QUERÍAS',
-        'COSTO X LOCUCIÓN: $5.950',
-        'SIN VENCIMIENTO',
-        'USO EN RADIO, TV, WEB Y REDES'
-      ],
-      highlight: false,
-      isNew: true
-    },
-    {
       id: 'pack_inicial',
       name: 'PACK INICIAL',
       oldPrice: '$50.000',
-      price: '$35.000',
+      price: '$42.000',
       description: 'Ideal para spots de radio y redes sociales.',
       features: [
         '20 LOCUCIONES TOTALES',
         '10 ORIGINALES + 10 SEGUNDAS TOMAS DE REGALO',
-        'COSTO X LOCUCIÓN: $1.750',
+        'COSTO X LOCUCIÓN: $2.100',
         'SIN VENCIMIENTO',
-        'USO EN RADIO, TV, WEB Y REDES'
+        'USO EN RADIO, TV, WEB Y REDES',
+        'INCLUYE TECNOLOGÍA V4',
+        'ANALYSER + INTERPRETACIÓN MEJORADA'
       ],
       highlight: false,
       isNew: false
@@ -38,14 +24,16 @@ const Pricing: React.FC = () => {
       id: 'pack_pro',
       name: 'PACK PRO',
       oldPrice: '$110.000',
-      price: '$55.000',
+      price: '$65.000',
       description: 'Perfecto para Radios, campañas o artística.',
       features: [
         '50 LOCUCIONES TOTALES',
         '25 ORIGINALES + 25 SEGUNDAS TOMAS DE REGALO',
-        'COSTO X LOCUCIÓN: $1.100 (¡Ahorrás más!)',
+        'COSTO X LOCUCIÓN: $1.300 (¡Ahorrás más!)',
         'SIN VENCIMIENTO',
-        'USO EN RADIO, TV, WEB Y REDES'
+        'USO EN RADIO, TV, WEB Y REDES',
+        'INCLUYE TECNOLOGÍA V4',
+        'ANALYSER + INTERPRETACIÓN MEJORADA'
       ],
       highlight: true,
       isNew: false
@@ -62,7 +50,9 @@ const Pricing: React.FC = () => {
         'COSTO X LOCUCIÓN: $1.000 (Precio Mayorista)',
         'SIN VENCIMIENTO',
         'SOPORTE PRIORITARIO',
-        'USO ILIMITADO'
+        'USO ILIMITADO',
+        'INCLUYE TECNOLOGÍA V4',
+        'ANALYSER + INTERPRETACIÓN MEJORADA'
       ],
       highlight: false,
       isNew: false
@@ -98,7 +88,7 @@ const Pricing: React.FC = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-4 gap-8 max-w-7xl mx-auto items-stretch mb-20">
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto items-stretch mb-20">
           {plans.map((plan, idx) => (
             <div
               key={idx}
