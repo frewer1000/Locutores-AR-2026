@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Instagram } from 'lucide-react';
+import { Instagram, ShieldCheck } from 'lucide-react';
 import Hero from './components/Hero.tsx';
 import Demos from './components/Demos.tsx';
 import Features from './components/Features.tsx';
@@ -133,6 +133,17 @@ const App: React.FC<AppProps> = ({ forcedView }) => {
               <p className="text-blue-500/60 text-[10px] font-black uppercase tracking-[0.2em] mb-4">
                 admin@locutoresargentinosia.com.ar
               </p>
+              <div className="mb-4">
+                <a
+                  href="https://locutoresargentinosia.com.ar/politica-de-privacidad/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-gray-500 hover:text-blue-400 text-[10px] font-black uppercase tracking-widest transition-colors mb-4"
+                >
+                  <ShieldCheck className="w-3 h-3" />
+                  Política de Privacidad
+                </a>
+              </div>
               <div className="flex justify-center gap-4 mb-8">
                 <a 
                   href="https://www.instagram.com/locutoresargentinosia/"
