@@ -44,8 +44,7 @@ const Store: React.FC<StoreProps> = ({ onClose }) => {
         '100 LOCUCIONES TOTALES',
         '50 ORIGINALES + 50 BONIFICADAS',
         'COSTO X LOCUCIÓN: $1.150 (MAYORISTA)',
-        'SOPORTE PRIORITARIO',
-        'USO ILIMITADO SIN VENCIMIENTO'
+        'SOPORTE PRIORITARIO'
       ],
       highlight: false
     }

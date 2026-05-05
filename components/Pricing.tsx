@@ -43,15 +43,14 @@ const Pricing: React.FC = () => {
       id: 'pack_productora',
       name: 'PACK PRODUCTORA',
       oldPrice: '$200.000',
-      price: '$100.000',
+      price: '$115.000',
       description: 'Para quienes necesitan calidad y rapidez todos los días.',
       features: [
         '100 LOCUCIONES TOTALES',
         '50 ORIGINALES + 50 SEGUNDAS TOMAS DE REGALO',
-        'COSTO X LOCUCIÓN: $1.000 (Precio Mayorista)',
+        'COSTO X LOCUCIÓN: $1.150 (Precio Mayorista)',
         'SIN VENCIMIENTO',
         'SOPORTE PRIORITARIO',
-        'USO ILIMITADO',
         'INCLUYE TECNOLOGÍA V4',
         'ANALYSER + INTERPRETACIÓN MEJORADA'
       ],
